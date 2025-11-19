@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a.active {
+    font-weight: bold;
+}
+
+header nav ul li ul.dropdown {
+    position: absolute;
+    background-color: #444;
+    top: 30px;
+    left: 0;
+    padding: 10px 0;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header nav ul li:hover ul.dropdown {
+    display: flex;
+}
+
+header nav ul li ul.dropdown li a {
+    font-size: 16px;
+}
+
+.title-section {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.considerations {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.consideration-box {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Animated Styles */
+.card, .icon-list li, .step, .column {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover, .icon-list li:hover, .step:hover, .column:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    background-color: #e6f7ff; /* Color de fondo al pasar el mouse */
+}
+
+.card h4, .icon-list li h4, .step h4, .column h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p, .icon-list li p, .step p, .column p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo para las tarjetas dentro de 'Herramientas necesarias para teletrabajar' */
+.info-cards .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px; /* Bordes redondeados para las tarjetas */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: none; /* Eliminar cualquier transición */
+}
+
+/* Estilo para las tarjetas al pasar el mouse, sin animación */
+.info-cards .card:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Mantener el mismo efecto de sombra */
+    background-color: #fff; /* Mantener el mismo color de fondo */
+}
